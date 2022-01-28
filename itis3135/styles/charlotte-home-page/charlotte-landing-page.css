@@ -1,5 +1,30 @@
-header {
-    background: orange;
-    color: white;
-    font-family: 'Nixie One', cursive;
+body 
+{
+    background-color: #262626;
+    color: #FFA514;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+header 
+{
+    
+    font-family: 'Nixie One', cursive; 
+    text-align: center;
+}
+footer 
+{
+    text-align: center;
+    padding-top: 350px;
+}
+a 
+{
+    color: #4AD0FC;
+}
+main 
+{
+    text-align: center;
+    padding-top: 350px;
+}
+h6
+{
+    text-size-adjust: 10px;
 }
