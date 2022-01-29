@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang =en>
     <head>
-        <title>Contract.html</title>
+        <title>table.html</title>
         <link rel="stylesheet" href="styles/hot-pink-hippos.css"> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
             
             <h1> <a href="index.html"><img src="images/hot_pink_hippos.png" alt="Hippo icon" id="hippo_icon"></a>
                 ITIS 3135  ][  Henry Hall  ][  Hot Pink Hippos</h1>
-            <h3>Dangeorusly Delightful</h3>
+            <h4>Dangerously Delightful</h4>
             <nav>
                 <h5>
                     <a href="index.html">Introduction</a> [:] 
@@ -23,7 +23,125 @@
             </nav>
         </header>
         <main>
-
+                <h2>Table</h2>
+                <h3>My Tabular Data</h3>
+                <ol>
+                    <li>Bob the Builder yes_we_can@hallbms.com 15</li>
+                    <li>Dio Brando the_world@hallbms.com 10</li>
+                    <li>Todo Takayuki tsu_daimyo@hallbms.com 9</li>
+                    <li>Haytham Kenway templar_master@hallbms 12</li>
+                    <li>Niko Bellic vladivostok@hallbms.com 4</li>
+                    <li>Ezio Auditore auditoredefirenze@hallbms.com 1</li>
+                    <li>Zeratul darktemplar5678@hallbms.com 8</li>
+                </ol>
+                <h3>Employee Data in Simple Table</h3>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years of Service</th>
+                    </tr>
+                    <tr>
+                        <td>Bob the Builder</td>
+                        <td>yes_we_can@hallbms.com</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Dio Brando</td>
+                        <td>the_world@hallbms.com</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Todo Takayuki</td>
+                        <td>tsu_daimyo@hallbms.com</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Haytham Kenway</td>
+                        <td>templar_master@hallbms</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>Niko Bellic</td>
+                        <td>vladivostok@hallbms.com</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Ezio Auditore</td>
+                        <td>auditoredefirenze@hallbms.com</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Zeratul</td>
+                        <td>darktemplar5678@hallbms.com</td>
+                        <td>8</td>
+                    </tr>
+                </table>
+                <h3>Employee Data in Complex Table</h3>
+                <figure>
+                    <table>
+                        <tr>
+                            <th id="dep">Department</th>
+                            <th id="name">Name</th>
+                            <th id="email">Email</th>
+                            <th id="years">Years of Service</th>
+                            <th id="pay">Salary</th>
+                        </tr>
+                        <tr>
+                            <th id="customer">Customer Service</th>
+                            <td headers="customer name">Bob the Builder</td>
+                            <td headers="customer email">yes_we_can@hallbms.com</td>
+                            <td headers="customer years">15</td>
+                            <td headers="customer pay">80,000</td>
+                        </tr>
+                        <tr>
+                            <th rowspan ="2" id="market">Marketing</th>
+                            <td headers="market name">Dio Brando</td>
+                            <td headers="market email">the_world@hallbms.com</td>
+                            <td headers="market years">10</td>
+                            <td headers="market pay">120,000</td>
+                        </tr>
+                        <tr>
+                            <td headers="market name">Todo Takayuki</td>
+                            <td headers="market email">tsu_daimyo@hallbms.com</td>
+                            <td headers="market years">9</td>
+                            <td headers="market pay">90,000</td>
+                        </tr>
+                        <tr>
+                            <th id="security">Security</th>
+                            <td headers="security name">Haytham Kenway</td>
+                            <td headers="security email">templar_master@hallbms</td>
+                            <td headers="security years">12</td>
+                            <td headers="security pay">82,000</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2" id="sales">Sales Rep</th>
+                            <td headers="sales name">Niko Bellic</td>
+                            <td headers="sales email">vladivostok@hallbms.com</td>
+                            <td headers="sales years">4</td>
+                            <td headers="sales pay">65,000</td>
+                        </tr>
+                        <tr>
+                            <td headers="sales name">Ezio Audtiore</td>
+                            <td headers="sales email">auditoredefirenze@hallbms.com</td>
+                            <td headers="sales years">1</td>
+                            <td headers="sales pay">63,000</td>
+                        </tr>
+                        <tr>
+                            <th id="recruit">Recruitment</th>
+                            <td headers="recruit name">Zeratul</td>
+                            <td headers="recruit email">darktemplar5678@hallbms.com</td>
+                            <td headers="recruit years">8</td>
+                            <td headers="recruit pay">45,000</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Total Years of Service</th>
+                            <td>59</td>
+                            <td>545,000</td>
+                        </tr>
+                    </table>
+                    <figcaption id="table_caption1">The Team Behind all the Hippos</figcaption>
+                </figure>
         </main>
         <footer>
             <nav>
@@ -37,10 +155,10 @@
                     <a href="">LinkedIn</a> 
                     
                 </h5>
-                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhhall2556.github.io%2Fhallhenry2557.github.io%2Fitis3135%2Findex.html" target="_blank">
+                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Ftable.html" target="_blank">
                     <img src="images/htmlverify.png" alt="HTML Verify">
                 </a>
-                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhhall2556.github.io%2Fhallhenry2557.github.io%2Fitis3135%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Ftable.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
                     <img src="images/cssverfiy.png" alt="W3CSS Verify">
                 </a>
                 <h6><a href= "hallbenchmarksolutions/index.html" target="_blank">©HallBenchmarkSolutions 2022</a></h6>

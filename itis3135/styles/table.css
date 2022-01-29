@@ -4,10 +4,6 @@ body
     background-color: #454545;
     font-family: 'Zen Maru Gothic', sans-serif;
 }
-main
-{
-    background-color: #404040;
-}
 header
 {
     text-align: center;
@@ -64,14 +60,5 @@ h5
 }
 h4
 {
-  color: #E46BFF;
-  font-size: 20px; 
-}
-figure
-{
-    text-align: center;
-}
-#table_caption1
-{
-    padding-right: 125px;
+  color: #E46BFF;  
 }
