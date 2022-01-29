@@ -1,0 +1,47 @@
+
+body
+{
+    color: white;
+    background-color: #454545;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+header
+{
+    text-align: center;
+    background-color: #242424;
+    padding-bottom: 10px;
+    color: #FAD6E6;
+}
+a
+{
+    color: #86DAFD;
+}
+h1
+{
+    background-color: #080808;
+    margin-top: 0%;
+    font-family: 'Ledger', serif;
+}
+h3
+{
+    color: #FEB4F1;
+   
+}
+h2
+{
+    text-align: center;
+}
+figure
+{
+    text-align: center;
+}
+footer
+{
+    text-align: center;
+    background-color: #242424;
+}
+#hippo_icon
+{
+    padding-right: 70px;
+    padding-top: 15px;
+}
