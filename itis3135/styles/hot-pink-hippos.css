@@ -6,7 +6,7 @@ body
 }
 main
 {
-    background-color: #404040;
+    background-color: #303030;
 }
 header
 {
@@ -32,6 +32,7 @@ h3
 }
 h2
 {
+    color: #FEB4F1;
     text-align: center;
 }
 footer
@@ -74,4 +75,16 @@ figure
 #table_caption1
 {
     padding-right: 125px;
+}
+#formend
+{
+    background-color: #664600;
+    color: #FDEBFF;
+}
+form
+{
+    font-family: 'Mallanna', sans-serif;
+    font-size: 20px;
+    color: #D2DBFE;  
+    position: relative; left: 5%;
 }
