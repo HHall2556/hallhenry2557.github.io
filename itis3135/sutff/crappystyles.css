@@ -1,0 +1,29 @@
+h2 {
+    font-family: "papyrus";
+    margin-left: 34%;
+}
+#pizza{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 200px;
+    text-align: center;
+    margin-left: 22%;
+    border-color:chocolate;
+    border-width: 100px;
+    border-style:groove;
+    border-top-color:darkblue;
+    border-top-style:solid;
+    border-left-color:blueviolet;
+    border-left-style:dashed; 
+    border-bottom-color:bisque;
+    border-right-style:dotted;
+}
+ul{
+    text-align:center;
+}
+img{
+    margin-left: 58%;
+}
+li{
+    background-color: black;
+    color:#00573A;
+}
