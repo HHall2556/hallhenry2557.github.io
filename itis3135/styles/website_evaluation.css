@@ -28,6 +28,7 @@ h1
 h3
 {
     color: #FEB4F1;
+    position:  relative; left: 1%;
    
 }
 h2
@@ -45,19 +46,6 @@ footer
     padding-right: 70px;
     padding-top: 15px;
 }
-table tr:nth-child(even)
-{
-    background-color: #175700;
-}
-table tr:nth-child(odd)
-{
-    background-color: #006607;
-}
-
-table tr:nth-child(1)
-{
-    background-color: #002E03;
-}
 h5
 {
     background-color: #242424;
@@ -68,27 +56,12 @@ h4
   color: #E46BFF;
   font-size: 20px; 
 }
-figure
+p
 {
-    text-align: center;
-}
-#table_caption1
-{
-    padding-right: 125px;
-}
-#formend
-{
-    background-color: #664600;
-    color: #FDEBFF;
-}
-form
-{
-    font-family: 'Mallanna', sans-serif;
-    font-size: 20px;
-    color: #D2DBFE;  
-    position: relative; left: 5%;
+    position:  relative; left: 1%;
 }
 a:hover
 {
     color: #FEB4F1;
 }
+
