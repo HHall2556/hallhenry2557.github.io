@@ -28,15 +28,12 @@ h1
     padding-bottom: 15px;
     text-align:center;
 }
-h3
-{
-    color: #FEB4F1;
-   
-}
+
 h2
 {
     color: #FEB4F1;
     text-align: center;
+    font-size: 26px;
 }
 footer
 {
@@ -95,4 +92,11 @@ form
 a:hover
 {
     color: #FEB4F1;
+}
+h3
+{
+    font-size:22px;
+    color: #FEB4F1;
+    position: relative; left: 5%;
+   
 }
