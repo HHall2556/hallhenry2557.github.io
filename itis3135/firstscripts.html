@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scripts</title>
+    <link rel="stylesheet" href="styles/hot-pink-hippos.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ledger&family=Nixie+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function()
+        {
+            $("#header").load("header.html"); 
+            $("#footer").load("footer.html"); 
+        });
+    </script> 
+    <script src="scripts/firstscripts.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <h2>First Scripts</h2>
+        <h3>Today's Date is: <script>getDate();</script></h3>
+        <form>
+            
+            <label for="getname">What is your name?</label>
+            <input type="text" id="getname" name="getname"><br>
+            <label for="getfeeling">How do you Feel?</label>
+            <input type="text" id="getfeeling" name="getfeeling"><br>
+            <input type="submit" onclick="nameAndFeeling(); return false;"></button>
+        </form>
+        <h3 id="nameresult">Asnwer the above questions for a suprise!</h3>
+        <h3 id="feelingresult">It's not a phishing attack, I promise.</h3>
+        <form>
+            <label for="continentquestion">Check How many HPH we have in every continent</label>
+            <select id="continentquestion">
+                <option>Asia</option>
+                <option>North America</option>
+                <option>South America</option>
+                <option>Africa</option>
+                <option>Europe</option>
+                <option>Antarctica</option>
+                <option>Australia</option>
+            </select>
+            <input type="submit" onclick="continentSelect(); return false;">
+        </form>
+        <h3 id="continentresult"><script>continentSelect();</script></h3>
+        <form>
+            <label for="favoritedrink">The choice drink of hippos</label>
+            <input type="button" id="favoritedrink" value="What could it be???" onclick="favoriteDrink(); return false;">
+        </form> 
+        <h3 id="favoritedrinkresult"></h3>
+        <form>
+            <label for="hippopower">Enter a number to caluculate the horsepower produced by that many hippos</label>
+            <input type="Text" id="hippopower">
+            <input type="submit" onclick="calculateHippoPower()">
+        </form>  
+    </main>
+    <div id="footer"></div>
+    
+</body>
+</html>
