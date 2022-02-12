@@ -1,28 +1,26 @@
 <!doctype html>
 <html lang =en>
     <head>
-        <title>index</title>
+        <title>Introduction</title>
         <link rel="stylesheet" href="styles/hot-pink-hippos.css"> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ledger&family=Nixie+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <script> 
+            $(function()
+            {
+                $("#header").load("header.html"); 
+                $("#footer").load("footer.html"); 
+            });
+        </script> 
     </head>
     <body>
-        <header>
-            
-            <h1> <a href="index.html"><img src="images/hot_pink_hippos.png" alt="Hippo icon" id="hippo_icon"></a>
-                ITIS 3135  ][  Henry Hall  ][  Hot Pink Hippos</h1>
-            <h4>Dangerously Delightful</h4>
-            <nav>
-                <h5>
-                    <a href="index.html">Introduction</a> [:] 
-                    <a href="contract.html">Contract</a> [:] 
-                    <a href="table.html">Table</a> [:] 
-                    <a href="form.html">Form</a> [:]
-                    <a href="website_evaluations.html">Website Evaluations</a>
-                </h5>
-            </nav>
-        </header>
+        <div id="header"></div>
         <main>
             <h2>Introduction</h2>
             <figure>
@@ -69,27 +67,7 @@
                     movies/shows even if the film adaptions are good. </li>
             </ul>
         </main>
-        <footer>
-            <nav>
-                <h5>
-                    <a href="https://webpages.charlotte.edu/hhall25/">Charlotte.edu</a> [:] 
-                    <a href="https://github.com/HHall2556" target="_blank">Github</a> [:] 
-                    <a href="https://github.com/HHall2556/hallhenry2557.github.io" target="_blank">Github.io</a> [:] 
-                    <a href="https://hhall2556.github.io/hallhenry2557.github.io/itis3135/index.html" target="_blank">ITIS 3135 Github Pages</a> [:] 
-                    <a href="">Codeacademy</a> [:] 
-                    <a href="https://www.freecodecamp.org/HenryHall2557" target="_blank">freeCodeCamp</a> [:] 
-                    <a href="">LinkedIn</a> 
-                    
-                </h5>
-                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html" target="_blank">
-                    <img src="images/htmlverify.png" alt="HTML Verify">
-                </a>
-                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
-                    <img src="images/cssverfiy.png" alt="W3CSS Verify">
-                </a>
-                <h6><a href= "http://hallsbms.com/" target="_blank">©HallBenchmarkSolutions 2022</a></h6>
-            </nav>
-        </footer>
+        <div id="footer"></div>
     </body>
 
 </html>
