@@ -46,16 +46,16 @@ footer
     padding-top: 15px;
     position: relative; top: 20px;
 }
-table tr:nth-child(even)
+#complex_table tr:nth-child(even)
 {
     background-color: #175700;
 }
-table tr:nth-child(odd)
+#complex_table tr:nth-child(odd)
 {
     background-color: #006607;
 }
 
-table tr:nth-child(1)
+#complex_table tr:nth-child(1)
 {
     background-color: #002E03;
 }
@@ -75,7 +75,7 @@ figure
 }
 #table_caption1
 {
-    padding-right: 125px;
+    text-align: center;
 }
 #formend
 {
@@ -99,4 +99,38 @@ h3
     color: #FEB4F1;
     position: relative; left: 5%;
    
+}
+figcaption
+{
+    font-style: italic;
+}
+#h3_simple_table
+{
+    text-align:center;
+    position: relative; left: 0%;
+}
+#simple_table
+{
+    position: relative; left: 38%;
+}
+#complex_table
+{
+    text-align:center;
+    position: relative; left: 32%;
+    border-style:solid;
+    border-color: #002E03;
+}
+#h3_complex_table
+{
+    text-align: center;
+    position: relative; left: 0%;
+}
+#h3_table_data
+{
+    text-align: center;
+    position: relative; left: 0%;
+}
+#table_data
+{
+    position: relative; left: 40%;
 }
