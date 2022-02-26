@@ -1,7 +1,3 @@
-function alertTest()
-{
-    alert('pizza');
-}
 function alertThatPolygon()
 {
     let numOfSides = document.getElementById("polygongen").value;
