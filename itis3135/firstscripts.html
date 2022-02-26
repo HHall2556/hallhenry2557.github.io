@@ -31,7 +31,7 @@
             <input type="text" id="getname" name="getname"><br>
             <label for="getfeeling">How do you Feel?</label>
             <input type="text" id="getfeeling" name="getfeeling"><br>
-            <input type="submit" onclick="nameAndFeeling(); return false;"></button>
+            <input type="submit" onclick="nameAndFeeling(); return false;">
         </form>
         <h3 id="nameresult">Asnwer the above questions for a suprise!</h3>
         <h3 id="feelingresult">It's not a phishing attack, I promise.</h3>
@@ -55,12 +55,21 @@
         </form> 
         <h3 id="favoritedrinkresult"></h3>
         <form>
-            <label for="hippopower">Enter a number to caluculate the horsepower produced by that many hippos</label>
-            <input type="Text" id="hippopower">
-            <input type="submit" onclick="calculateHippoPower()">
-        </form>  
+            <label for="hippopower">Enter a number to caluculate the hippopower produced by that many hippos</label>
+            <input type="Text" id="hippopower" name="hippopower">
+            <input type="submit" onclick="caluclateHippoPower(); return false;">
+        </form>
+        <h3 id="hippopowerresult"></h3>  
     </main>
-    <div id="footer"></div>
+    <footer>
+        <div id="footer"></div>
+        <nav>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html" target="_blank">
+                <img src="images/htmlverify.png" alt="HTML Verify"></a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+                <img src="images/cssverfiy.png" alt="W3CSS Verify"></a>
+        </nav>
+        </footer>
     
 </body>
 </html>

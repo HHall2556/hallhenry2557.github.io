@@ -134,3 +134,7 @@ figcaption
 {
     position: relative; left: 40%;
 }
+h6
+{
+    font-size: 12px;
+}
