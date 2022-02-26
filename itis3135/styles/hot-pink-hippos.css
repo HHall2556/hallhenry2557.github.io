@@ -138,3 +138,13 @@ h6
 {
     font-size: 12px;
 }
+#polygongenerator
+{
+    position: relative; left: 25%;
+}
+#polygon_error_message
+{
+    color: #E46BFF;
+    text-align: center;
+    font-size: large;
+}

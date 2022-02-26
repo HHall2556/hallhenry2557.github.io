@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Name That Polygon</title>
+    <link rel="stylesheet" href="styles/hot-pink-hippos.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ledger&family=Nixie+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function()
+        {
+            $("#header").load("header.html"); 
+            $("#footer").load("footer.html"); 
+        });
+    </script> 
+    <script src="scripts/name_that_polygon.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <h2>Name That Polygon</h2>
+        <form id="polygongenerator">
+            <label for="polygongen">The Hot Pink Hippos would like you to enter a
+                number between 1 and 10</label>
+            <input type="text" id="polygongen" name="polygongen" placeholder="1,2,3,4,5,6,7,8,9, or 10">
+            <input type="submit" onclick="alertThatPolygon(); return false;">
+        </form>  
+        <p id="polygon_error_message"></p>
+    </main>
+    <footer>
+        <div id="footer"></div>
+        <nav>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html" target="_blank">
+                <img src="images/htmlverify.png" alt="HTML Verify"></a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+                <img src="images/cssverfiy.png" alt="W3CSS Verify"></a>
+        </nav>
+        </footer>
+    
+</body>
+</html>
