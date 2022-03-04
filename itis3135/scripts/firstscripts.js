@@ -51,3 +51,72 @@ function favoriteDrink()
 {
     document.getElementById("favoritedrinkresult").innerHTML= "Clean water. Maybe not that suprising";
 }
+function caluclateHippoPower()
+{
+    let hippoValue = document.getElementById("hippopower").value;
+    document.getElementById("hippopowerresult").innerHTML = hippoValue * 13 + 
+    " Hippo Power. Now that's a lot of damage";
+}
+function crocHippoBattle()
+{
+    let hippoNumber = document.getElementById("hippo_numbers").value;
+    let crocNumber = document.getElementById("croc_numbers").value;
+    hippoNumber = parseInt(hippoNumber);
+    crocNumber = parseInt(crocNumber);
+    entry1Valid = validateEntry(hippoNumber);
+    entry2Valid = validateEntry(crocNumber);
+    let hippoWin = true;
+
+    if(entry1Valid && entry2Valid)
+    {
+        while((crocNumber > 0) && (hippoNumber > 0))
+        {
+            victor = roundVictory(100);
+            if(victor <= 50)
+            {
+                crocNumber--;
+            }
+            else
+            {
+                hippoNumber--;
+            }
+            if(hippoNumber == 0)
+            {
+                hippoWin = false;
+            }
+
+        }
+        if(hippoWin)
+        {
+            document.getElementById("battle_result").innerHTML= "The Brave Hippos defeated the Crocodiles this battle" +
+            " With " + hippoNumber + " reinforcments remaining";
+        }
+        else 
+        {
+            document.getElementById("battle_result").innerHTML= "The Crocodiles defeated the Valiant Hippos this battle" +
+            " With " + crocNumber + " reinforcments remaining";
+        }
+    }
+    else
+    {
+        document.getElementById("battle_result").innerHTML= "You entered an impossible combination. " 
+        + "Try whole numbers above zero";
+        return false;
+    }
+}
+function roundVictory(max)
+{
+    return Math.floor(Math.random() * max);
+}
+function validateEntry(entry)
+{
+    if(entry > 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+
+}

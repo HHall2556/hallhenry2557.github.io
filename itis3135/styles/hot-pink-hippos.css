@@ -8,6 +8,8 @@ main
 {
     background-color: #303030;
     padding-bottom: 1px;
+    padding-left: 1%;
+    font-size: 20px;
 }
 header
 {
@@ -111,12 +113,12 @@ figcaption
 }
 #simple_table
 {
-    position: relative; left: 38%;
+    position: relative; left: 37%;
 }
 #complex_table
 {
     text-align:center;
-    position: relative; left: 32%;
+    position: relative; left: 27%;
     border-style:solid;
     border-color: #002E03;
 }
@@ -132,7 +134,7 @@ figcaption
 }
 #table_data
 {
-    position: relative; left: 40%;
+    position: relative; left: 39%;
 }
 h6
 {
@@ -140,7 +142,7 @@ h6
 }
 #polygongenerator
 {
-    position: relative; left: 25%;
+    position: relative; left: 24%;
 }
 #polygon_error_message
 {

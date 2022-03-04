@@ -25,16 +25,18 @@
     <main>
         <h2>First Scripts</h2>
         <h3>Today's Date is: <script>getDate();</script></h3>
-        <form>
-            
-            <label for="getname">What is your name?</label>
+
+        <form> 
+            <label for="getname">What is your name?</label><br>
             <input type="text" id="getname" name="getname"><br>
-            <label for="getfeeling">How do you Feel?</label>
+            <label for="getfeeling">How do you Feel?</label><br>
             <input type="text" id="getfeeling" name="getfeeling"><br>
             <input type="submit" onclick="nameAndFeeling(); return false;">
         </form>
-        <h3 id="nameresult">Asnwer the above questions for a suprise!</h3>
+
+        <h3 id="nameresult">Answer the above questions for a suprise!</h3>
         <h3 id="feelingresult">It's not a phishing attack, I promise.</h3>
+
         <form>
             <label for="continentquestion">Check How many HPH we have in every continent</label>
             <select id="continentquestion">
@@ -48,18 +50,32 @@
             </select>
             <input type="submit" onclick="continentSelect(); return false;">
         </form>
+
         <h3 id="continentresult"><script>continentSelect();</script></h3>
         <form>
             <label for="favoritedrink">The choice drink of hippos</label>
             <input type="button" id="favoritedrink" value="What could it be???" onclick="favoriteDrink(); return false;">
         </form> 
+
         <h3 id="favoritedrinkresult"></h3>
         <form>
             <label for="hippopower">Enter a number to caluculate the hippopower produced by that many hippos</label>
             <input type="Text" id="hippopower" name="hippopower">
             <input type="submit" onclick="caluclateHippoPower(); return false;">
         </form>
-        <h3 id="hippopowerresult"></h3>  
+        <p id="hippopowerresult"></p>
+
+        <form>
+            <p>Hippos and Crocodiles share the water and fight often. However,
+                in a battlefied scenario, who would win? Enter a number
+                for the amount of hippos and crocs to find out the victor</p>
+            <label for="hippo_numbers">How many Hippos?</label> 
+            <input type="text" id="hippo_numbers" name="hippo_numbers"><br>
+            <label for="croc_numbers">How many Crocodiles?</label> 
+            <input type="text" id="croc_numbers" name="croc_numbers">
+            <input type="submit" onclick="crocHippoBattle(); return false;">
+        </form>
+        <h3 id="battle_result"></h3>
     </main>
     <footer>
         <div id="footer"></div>
