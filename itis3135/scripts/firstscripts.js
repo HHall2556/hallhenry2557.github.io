@@ -54,8 +54,17 @@ function favoriteDrink()
 function caluclateHippoPower()
 {
     let hippoValue = document.getElementById("hippopower").value;
-    document.getElementById("hippopowerresult").innerHTML = hippoValue * 13 + 
-    " Hippo Power. Now that's a lot of damage";
+    let hippoValidate = validateEntry(hippoValue);
+    if(hippoValidate)
+    {
+        document.getElementById("hippopowerresult").innerHTML = hippoValue * 13 + 
+        " Hippo Power. Now that's a lot of damage";
+    }
+    else
+    {
+        document.getElementById("hippopowerresult").innerHTML = "Half a hippo is a dead hippo." +
+        " You also can't have negative hippos";
+    }
 }
 function crocHippoBattle()
 {
@@ -119,4 +128,29 @@ function validateEntry(entry)
         return false;
     }
 
+}
+
+function hippoExportTax()
+{
+    let radios = document.getElementsByName('hippotax')
+    let hippoNumber = 1;
+    for(var radio of radios)
+    {
+        if(radio.checked)
+        {
+            hippoNumber = radio.value;
+        }
+    }
+    if(hippoNumber == "1")
+    {
+        document.getElementById("hippoExportTaxResult").innerHTML= "You will pay a 10% export tax";
+    }
+    else if(hippoNumber == "2")
+    {
+        document.getElementById("hippoExportTaxResult").innerHTML= "You will pay a 20% export tax";
+    }
+    else
+    {
+        document.getElementById("hippoExportTaxResult").innerHTML= "You will pay a 35% export tax";
+    }
 }

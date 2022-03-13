@@ -38,7 +38,7 @@
         <h3 id="feelingresult">It's not a phishing attack, I promise.</h3>
 
         <form>
-            <label for="continentquestion">Check How many HPH we have in every continent</label>
+            <label for="continentquestion">Check How many HPH we have in every continent</label><br>
             <select id="continentquestion">
                 <option>Asia</option>
                 <option>North America</option>
@@ -59,23 +59,37 @@
 
         <h3 id="favoritedrinkresult"></h3>
         <form>
-            <label for="hippopower">Enter a number to caluculate the hippopower produced by that many hippos</label>
+            <label for="hippopower">Enter a number to caluculate the hippopower produced by that many hippos</label><br>
             <input type="Text" id="hippopower" name="hippopower">
             <input type="submit" onclick="caluclateHippoPower(); return false;">
         </form>
-        <p id="hippopowerresult"></p>
+        <h3 id="hippopowerresult"></h3>
 
         <form>
             <p>Hippos and Crocodiles share the water and fight often. However,
                 in a battlefied scenario, who would win? Enter a number
                 for the amount of hippos and crocs to find out the victor</p>
-            <label for="hippo_numbers">How many Hippos?</label> 
+            <label for="hippo_numbers">How many Hippos?</label><br>
             <input type="text" id="hippo_numbers" name="hippo_numbers"><br>
-            <label for="croc_numbers">How many Crocodiles?</label> 
+            <label for="croc_numbers">How many Crocodiles?</label><br>
             <input type="text" id="croc_numbers" name="croc_numbers">
             <input type="submit" onclick="crocHippoBattle(); return false;">
         </form>
         <h3 id="battle_result"></h3>
+        <form>
+            <label for="hippotax">Because Hippos are exotic animals, there is a 
+                progressive export tax bracket based on how many hippos you export. 
+                Select one of the options to see the tax rate for that bracket.
+            </label><br><br>
+            <input type = "radio" id="less_than_3" name="hippotax" value="1" checked="checked">
+            <label for="less_than_3"> Less than 3 Hippos</label><br>
+            <input type = "radio" id="4_to_10" name="hippotax" value="2">
+            <label for="4_to_10">4 to 10 Hippos</label><br>
+            <input type = "radio" id="greater_than_10" name="hippotax" value="3">
+            <label for="greater_than_10">More than 10 hippos.</label><br>
+            <input type="submit" onclick="hippoExportTax(); return false;">
+        </form>
+        <h3 id = "hippoExportTaxResult"></h3>
     </main>
     <footer>
         <div id="footer"></div>
