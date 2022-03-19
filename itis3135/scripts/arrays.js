@@ -125,7 +125,7 @@ function displaySalary()
     rowHead.appendChild(heading2);
     thead.appendChild(rowHead);
 
-    for(i = 1; i < people.length; i++)
+    for(i = 0; i < people.length; i++)
     {
         let row_i =  document.createElement('tr');
         let name_i =  document.createElement('td');
