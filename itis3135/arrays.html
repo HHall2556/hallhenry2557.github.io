@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Arrays</title>
     <link rel="stylesheet" href="styles/hot-pink-hippos.css"> 
@@ -18,21 +18,20 @@
             $("#footer").load("footer.html"); 
         });
     </script> 
-    
 </head>
 <body onload="createSelect()">
     <div id="header"></div>
     <main>
         <h2>Arrays Practice</h2>
         <form>
-            <label for="show_employee"><h4>Select an employee to show their salary.</h4></label>
+            <h4><label for="employee_select">Select an employee to show their salary.</label></h4>
             <select id="employee_select">
             </select>
             <input type="submit" onclick="showSalary(); return false;">
             <p id="show_one_salary"></p>
         </form>
         <form>
-            <label for="add_new_person"><h4>Type in a name and Salary to add a new employee.</h4></label>
+            <h4><label for="new_name">Type in a name and Salary to add a new employee.</label></h4>
             <label for="new_name">Name: </label>
             <input type="text" id="new_name" name ="add_new_person" required><br>
             <label for="new_salary">Salary: </label>
@@ -47,7 +46,7 @@
         </form>
         
         <form>
-            <label for="table_create"><h4>Click this button to get a list of all employees and their salaries</h4></label>
+            <h4><label for="table_create">Click this button to get a list of all employees and their salaries</label></h4>
             <input type="button" id="table_create" onclick="displaySalary(); return false;" value = "Display All"><br><br>
             <table id="results_table"></table>
         </form>
@@ -55,13 +54,13 @@
     <footer>
         <div id="footer"></div>
         <nav>
-            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html" target="_blank">
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Farrays.html" target="_blank">
                 <img src="images/htmlverify.png" alt="HTML Verify"></a>
-            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Farrays.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
                 <img src="images/cssverfiy.png" alt="W3CSS Verify"></a>
         </nav>
         </footer>
-    
+    <script src="scripts/arrays.js"></script>
 </body>
-<script src="scripts/arrays.js"></script>
+
 </html>
