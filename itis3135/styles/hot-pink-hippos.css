@@ -30,12 +30,19 @@ h1
     padding-bottom: 15px;
     text-align:center;
 }
-
+form
+{
+    font-family: 'Mallanna', sans-serif;
+    font-size: 20px;
+    color: #D2DBFE;  
+    position: relative; left: 5%;
+}
 h2
 {
     color: #FEB4F1;
     text-align: center;
     font-size: 26px;
+    position: relative; left: 0%;
 }
 footer
 {
@@ -71,11 +78,7 @@ h4
   color: #E46BFF;
   font-size: 20px; 
 }
-figure
-{
-    text-align: center;
-}
-#table_caption1
+#table_caption1, figure
 {
     text-align: center;
 }
@@ -84,12 +87,18 @@ figure
     background-color: #664600;
     color: #FDEBFF;
 }
-form
+
+input[type=text], input[type=email], select
 {
-    font-family: 'Mallanna', sans-serif;
+    background-color: #FAD6E6;
+    font-family: inherit;
     font-size: 20px;
-    color: #D2DBFE;  
-    position: relative; left: 5%;
+    font-weight: 500;
+    width: 25%;
+    padding: 7px 20px;
+    margin: 5px 0;
+    border-radius:5px;
+    border-color:#E46BFF;
 }
 a:hover
 {
@@ -106,11 +115,6 @@ figcaption
 {
     font-style: italic;
 }
-#h3_simple_table
-{
-    text-align:center;
-    position: relative; left: 0%;
-}
 #simple_table
 {
     position: relative; left: 37%;
@@ -122,12 +126,7 @@ figcaption
     border-style:solid;
     border-color: #002E03;
 }
-#h3_complex_table
-{
-    text-align: center;
-    position: relative; left: 0%;
-}
-#h3_table_data
+#h3_table_data, #h3_complex_table, #h3_simple_table
 {
     text-align: center;
     position: relative; left: 0%;
