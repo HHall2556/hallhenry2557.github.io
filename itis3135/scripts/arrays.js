@@ -40,7 +40,6 @@ function addSalary()
 {
     newName = document.getElementById("new_name").value;
     newSalary = parseInt(document.getElementById("new_salary").value);
-    alert(newSalary);
     let validateName = validateStringEntry(newName);
     let validateSalary = validateNumberEntry(newSalary);
     
