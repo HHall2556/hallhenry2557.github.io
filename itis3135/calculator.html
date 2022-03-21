@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/hot-pink-hippos.css">
+    <link rel="stylesheet" href="styles/calculator.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ledger&family=Nixie+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function()
+        {
+            $("#header").load("header.html"); 
+            $("#footer").load("footer.html"); 
+        });
+    </script> 
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <h2>Calculator</h2>
+        <div class="calculator-container">
+            <div class="calculator-display">
+                <p id="equation">0</p>
+                <p id="display-result">0</p>
+            </div>
+                <input type="button" id="percentage-sign" value="%" name="calculator-button">
+                <input type="button" id="clear-entry" value="CE" name="calculator-button">
+                <input type="button" id="clear-complete" value="C" name="calculator-button">
+                <input type="button" id="back-space" value="DEL" name="calculator-button">
+                <input type="button" id="one-over-x" value="1/x" name="calculator-button">
+                <input type="button" id="x-sqaured" value="x^2" name="calculator-button">
+                <input type="button" id="sqrt-x" value="&radic;" name="calculator-button" >
+                <input type="button" id="division" value="&divide;" name="calculator-button">
+                <input type="button" id="numpad7" value="7" name="calculator-button">
+                <input type="button" id="numpad8" value="8" name="calculator-button">
+                <input type="button" id="numpad9" value="9" name="calculator-button">
+                <input type="button" id="multi" value="&lowast;" name="calculator-button">
+                <input type="button" id="numpad4" value="4" name="calculator-button">
+                <input type="button" id="numpad5" value="5" name="calculator-button">
+                <input type="button" id="numpad6" value="6" name="calculator-button">
+                <input type="button" id="subtract" value="-" name="calculator-button">
+                <input type="button" id="numpad1" value="1" name="calculator-button">
+                <input type="button" id="numpad2" value="2" name="calculator-button">
+                <input type="button" id="numpad3" value="3" name="calculator-button">
+                <input type="button" id="addition" value="+" name="calculator-button">
+                <input type="button" id="pos-neg" value="+/-" name="calculator-button">
+                <input type="button" id="numpad0" value="0" name="calculator-button">
+                <input type="button" id="decimal" value="." name="calculator-button">
+                <input type="button" id="equals" value="=" name="calculator-button">
+        </div>
+    </main>
+    <footer>
+        <div id="footer"></div>
+        <nav>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Fcalculator.html" target="_blank">
+                <img src="images/htmlverify.png" alt="HTML Verify"></a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Fcalculator.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+                <img src="images/cssverfiy.png" alt="W3CSS Verify"></a>
+        </nav>
+        </footer>
+    <script src="scripts/calculator.js"></script>
+</body>
+
+</html>
