@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang =en>
+    <head>
+        <title>Project Requirements</title>
+        <link rel="stylesheet" href="styles/hot-pink-hippos.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ledger&family=Nixie+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <script> 
+            $(function()
+            {
+                $("#header").load("header.html"); 
+                $("#footer").load("footer.html"); 
+            });
+        </script> 
+    </head>
+    <body>
+        <div id="header"></div>
+        <main>
+            <h2>Project Requirements</h2>
+            <section>
+                <h3>Project Overview</h3>
+                <ol>
+                    <li><h4>Describe your application and its purpose</h4>
+                        <ul>
+                            <li>Frequently there is one person that makes the trip to the store in 
+                                a household at a time and tracking the needs of all the members
+                                of a household can be tricky. Certain items are best purchased at
+                                certain stores or only found at one store while others are
+                                commodities and knowing the price vs other places you have 
+                                purchased it can be important. Furthermore, frequently the person
+                                shopping needs to communicate with the person at home about 
+                                the product to further refine it. Another issue with a cloud based
+                                application is that  Sometimes connectivity inside the store can be
+                                limited, so the ability to cache the list is important.    
+                            </li>
+                        </ul>
+                    </li>
+                    <li><h4>Intended users of the Website</h4>
+                        <ul>
+                            <li>Members of any household who want to coordinate shopping
+                                and purchasing groceries.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><h4>Overview of the content of the website</h4>
+                        <ol>
+                            <li>Main page that introduces project and the features </li>
+                            <li>Features</li>
+                            <li>Partnership page</li>
+                            <li>About page (history as developer) + contact</li>
+                            <li>Project Progress</li>
+                        </ol>
+                    </li>
+                </ol>
+            </section>
+            <section>
+                <h3>Client information</h3>
+                <ul>
+                    <li>Client Name: Michael Hall</li>
+                    <li>Business Name: OpenShopper</li>
+                    <li>Email: [private] will be handled through a form</li>
+                    <li>Phone Number: [private]</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Wireframe</h3>
+                <figure>
+                    <img src="images/openshopper/openshopper_wireframe.png" alt="openshopper wireframe">
+                    <figcaption>Openshopper default look(colors subject to change)</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h3>Site Map</h3>
+                <figure>
+                    <img src="images/openshopper/openshopper_sitemap.png" alt="openshopper sitemap">
+                    <figcaption>openshopper site map</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h3>Page Design</h3>
+                <ol>
+                    <li><h4>Homepage</h4>
+                        <ol>
+                            <li><h5>Purpose</h5>
+                                <ul>
+                                    <li>Landing page that gives users general information about the product</li>
+                                </ul>
+                            </li>
+                            <li><h5>Audience</h5>
+                                <ul>
+                                    <li>Customers (customer, admin, etc.)</li>
+                                </ul>
+                            </li>
+                            <li><h5>Content</h5>
+                                <ul>
+                                    <li>General information about the product, some highlight features, and links</li>
+                                </ul>
+                            </li>
+                            <li><h5>Will the page contain buttons or hyperlinks or drop downs</h5>
+                                <ul>
+                                    <li>Yes</li>
+                                </ul>
+                            </li>
+                            <li><h5>Does this page as users to enter data?</h5>
+                                <ul>
+                                    <li>No user data will be entered here</li>
+                                </ul>
+                            </li>
+                            <li><h5>Will those data fields require validation?</h5>
+                                <ul>
+                                    <li>N/A</li>
+                                </ul>
+                            </li>
+                            <li><h5>What actions happen on the page?</h5>
+                                <ul>
+                                    <li>Navigate to other pages</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li><h4>Features</h4>
+                        <ol>
+                            <li><h5>Purpose</h5>
+                                <ul>
+                                    <li>Advertises proposed features for the app</li>
+                                </ul>
+                            </li>
+                            <li><h5>Audience</h5>
+                                <ul>
+                                    <li>Customers and potential contributors</li>
+                                </ul>
+                            </li>
+                            <li><h5>Content</h5>
+                                <ul>
+                                    <li>A list of the features</li>
+                                </ul>
+                            </li>
+                            <li><h5>Will the page contain buttons or hyperlinks or drop downs?</h5>
+                                <ul>
+                                    <li>Yes</li>
+                                </ul>
+                            </li>
+                            <li><h5>Does this page as users to enter data?</h5>
+                                <ul>
+                                    <li>No</li>
+                                </ul>
+                            </li>
+                            <li><h5>Will those data fields require validation?</h5>
+                                <ul>
+                                    <li>N/A</li>
+                                </ul>
+                            </li>
+                            <li><h5>What actions happen on the page?</h5>
+                                <ul>
+                                    <li>Navigation</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li><h4>Contributors</h4>
+                        <ol>
+                            <li><h5>Purpose</h5>
+                                <ul>
+                                    <li>This advertises the open source aspect of the project and advertises to prospective contributors</li>
+                                </ul>
+                            </li>
+                            <li><h5>Audience</h5>
+                                <ul>
+                                    <li>Potential Contributors</li>
+                                </ul>
+                            </li>
+                            <li><h5>Content</h5>
+                                <ul>
+                                    <li>Information about the nature of the project and a link to the github</li>
+                                </ul>
+                            </li>
+                            <li><h5>Will the page contain buttons or hyperlinks or drop downs</h5>
+                                <ul>
+                                    <li>yes</li>
+                                </ul>
+                            </li>
+                            <li><h5>Does this page as users to enter data?</h5>
+                                <ul>
+                                    <li>No</li>
+                                </ul>
+                            </li>
+                            <li><h5>Will those data fields require validation?</h5>
+                                <ul>
+                                    <li>N/A</li>
+                                </ul>
+                            </li>
+                            <li><h5>What actions happen on the page?</h5>
+                                <ul>
+                                    <li>Navigation</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li><h4>Blog</h4>
+                        <ol>
+                            <li><h5>Purpose</h5>
+                                <ul>
+                                    <li>This gives updates on the status of the project. When milestones are reached, 
+                                        they can be documented here (Will be static for this project)</li>
+                                </ul>
+                            </li>
+                            <li><h5>Audience</h5>
+                                <ul>
+                                    <li>Customers, contributors</li>
+                                </ul>
+                            </li>
+                            <li><h5>Content</h5>
+                                <ul>
+                                    <li>Blog entries</li>
+                                </ul>
+                            </li>
+                            <li><h5>Will the page contain buttons or hyperlinks or drop downs?</h5>
+                                <ul>
+                                    <li>Yes</li>
+                                </ul>
+                            </li>
+                            <li><h5>Does this page as users to enter data?</h5>
+                                <ul>
+                                    <li>No</li>
+                                </ul>
+                            </li>
+                            <li><h5>Will those data fields require validation?</h5>
+                                <ul>
+                                    <li>N/A</li>
+                                </ul>
+                            </li>
+                            <li><h5>What actions happen on the page?</h5>
+                                <ul>
+                                    <li>Open entries, navigation</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li><h4>About</h4>
+                        <ol>
+                            <li><h5>Purpose</h5>
+                                <ul>
+                                    <li>Gives information about the developers, and why they are qualified for this project</li>
+                                </ul>
+                            </li>
+                            <li><h5>Audience</h5>
+                                <ul>
+                                    <li>Customers, and potential contributors</li>
+                                </ul>
+                            </li>
+                            <li><h5>Content</h5>
+                                <ul>
+                                    <li>Infomration about developer, and form to get in touch</li>
+                                </ul>
+                            </li>
+                            <li><h5>Will the page contain buttons or hyperlinks or drop downs?</h5>
+                                <ul>
+                                    <li>yes</li>
+                                </ul>
+                            </li>
+                            <li><h5>Does this page as users to enter data?</h5>
+                                <ul>
+                                    <li>Yes</li>
+                                </ul>
+                            </li>
+                            <li><h5>Will those data fields require validation?</h5>
+                                <ul>
+                                    <li>Yes</li>
+                                </ul>
+                            </li>
+                            <li><h5>What actions happen on the page?</h5>
+                                <ul>
+                                    <li>Navigation, form entry</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </section>
+            <section>
+                <h3>Dynamic Functionality on the website</h3>
+                <h4>Photo Gallery</h4>
+                <p>Example: <a href="https://www.charlotte.edu/research">charlotte.edu</a></p>
+                
+            </section>
+        </main>
+        <footer>
+        <div id="footer"></div>
+        <nav>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html" target="_blank">
+                <img src="images/htmlverify.png" alt="HTML Verify"></a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+                <img src="images/cssverfiy.png" alt="W3CSS Verify"></a>
+        </nav>
+        </footer>
+    </body>
+
+</html>
