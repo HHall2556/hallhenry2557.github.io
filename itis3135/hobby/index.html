@@ -2,11 +2,96 @@
 <html lang =en>
     <head>
         <title>CS:GO</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Roboto+Slab&display=swap" rel="stylesheet">
+        <style>
+            body
+            {
+                font-family: 'Anek Tamil', sans-serif;
+                font-size: 20px;
+                background-color: rgb(75, 168, 255);
+                color:whitesmoke;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+            header
+            {
+                font-size: 20px;
+                text-align: center;
+                background-color: rgb(2, 38, 71);
+            }
+            main
+            {
+                padding-left: 1%;
+                background-color: rgb(0, 77, 150);
+            }
+            a
+            {
+                color:rgb(255, 251, 0);
+            }
+            a:hover
+            {
+                color:rgb(132, 141, 0);
+            }
+            #page-nav
+            {
+                font-size: 30px;
+            }
+            h1
+            {
+                font-family: 'Roboto Slab', serif;
+                font-size: 50px;
+            }
+
+            figure
+            {
+                text-align: center;
+            }
+            h2
+            {
+                text-align: center;
+                color: rgb(250, 67, 0);
+            }
+            h3
+            {
+                color: rgb(216, 110, 48);
+                font-size: 30px;
+            }
+            h4
+            {
+                color: rgb(255, 183, 142);
+                font-size: 26px;
+            }
+            h5
+            {
+                color: rgb(252, 214, 192);
+                font-size: 22px;
+            }
+            #history-container
+            {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            footer
+            {
+                padding-top: 1%;
+                text-align: center;
+                background-color: rgb(2, 38, 71);
+            }
+        </style>
     </head>
-    <body>
+    <body onload="return displayCurrentPage('what', 'history', 'why', 'how_to_play', 'competitve_mode');">
         <header>
             <h1>Counter-Strike: Global Offensive</h1>
             <p>The game you love to hate!</p>
+            <nav id="page-nav">
+                <a href="#" onclick="return displayCurrentPage('what', 'history', 'why', 'how_to_play', 'competitve_mode');">CSGO?</a> /|\
+                <a href="#" onclick="return displayCurrentPage('history', 'what', 'why', 'how_to_play', 'competitve_mode');">History</a> /|\
+                <a href="#" onclick="return displayCurrentPage('why', 'history', 'what', 'how_to_play', 'competitve_mode');">Why?</a> /|\
+                <a href="#" onclick="return displayCurrentPage('how_to_play', 'history', 'why', 'what', 'competitve_mode');">How?</a> /|\
+                <a href="#" onclick="return displayCurrentPage('competitve_mode', 'history', 'why', 'how_to_play', 'what');">Ranked</a>
+            </nav>
         </header>
         <main>
             <section id="what">
@@ -117,6 +202,7 @@
             </section>
             <section id="why">
                 <h2>Why I love this game</h2>
+            <figure>
                 <audio id="lets_roll" src="audio/letsroll.mp3" preload="auto"></audio>
                 <button type="button" id="play_letsroll_audio" onclick="document.getElementById('lets_roll').play();"><img src="images/personal_screenshots/accept.jpg" alt="accept button"></button> 
                 <figcaption>Accept button(Click for a meme)</figcaption>
@@ -191,7 +277,7 @@
                 <h2>How Do you play Counter Strike?</h2>
                 <figure>
                     <img src="images/personal_screenshots/smiley_face.png" alt="smileyface">
-                    <figcaption>Smiley face made of bullet holes</figcaption>
+                    <figcaption>Smiley face made of bullet holes(You after learning to play good:)</figcaption>
                 </figure>
                 <h3>The basics</h3>
                 <p>This could take all day, so I'm going to keep it as simple and constrained as possible.
@@ -202,7 +288,7 @@
                     <li>Each round is 2 minutes long plus bomb timer if planted(add 45 seconds)</li>
                     <li>You need to buy weapons, armor, and defuse kit if CT(Don't be a loser, buy a defuser)
                         <ul>
-                            <li>No defuser takes 10 seconds to defuse</li>
+                            <li>Loser takes 10 seconds to defuse</li>
                             <li>Defuser takes 5 seconds to defuse</li>
                         </ul>
                     </li>
@@ -213,23 +299,190 @@
                     <li>Firing your weapon while moving or middair causes inaccuracy
                         <ul>
                             <li>Hold A+D at the same time to instantly stand still before firing</li>
+                            <li>Actively Think about coming to complete stop before shooting</li>
                         </ul>
                     </li>
                     <li>Crouching mid jump will let you jump on taller objects</li>
                     <li>Source engine gives a lot of control mid air
                         <ul>
-                            <li>Holding A or D while in midair plus mouse movement lets you strafe which allows you to accelerate you velocity</li>
+                            <li>Holding A or D while in midair plus mouse movement lets you strafe which allows you to accelerate your velocity</li>
                             <li>Avoid pressing W or S mid air</li>
                             <li>Surf servers or Jump maps can help you improve your movement</li>
                         </ul>
                     </li>
                 </ul>
-                <ul><h4></h4>
-
+                <ul><h4>Weapons</h4>
+                            <li><h5>Knives</h5>
+                                <ul>
+                                    <li>You Spawn with this</li>
+                                    <li>High kill bounty($1500)</li>
+                                    <li>Right click is Heavy attack
+                                        <ul>
+                                            <li>Does 55 Damage to amrored opponents and 65 to unarmoured</li>
+                                            <li>Second swing is slow</li>
+                                            <li>Will insta kill if baackstab</li>
+                                        </ul>
+                                    </li>
+                                    <li>Left click is light attack
+                                        <ul>
+                                            <li>If you miss the first attack, the next swing will do less damage</li>
+                                            <li>34/21 to armored and 40/25 to unamored</li>
+                                            <li>takes two backstabs to finish</li>
+                                        </ul>
+                                    </li>
+                                    <li>Best combo is left + left + right in melee</li>
+                                </ul>
+                            </li>
+                            <li><h5>Pistols</h5>
+                                <ul>
+                                    <li>You spawn with one</li>
+                                    <li>High bounties</li>
+                                    <li>cheap and good for save/eco rounds</li>
+                                    <li>Avoid longe range unless deagle</li>
+                                </ul>
+                            </li>
+                            <li><h5>Sub Machine Guns</h5>
+                                <ul>
+                                    <li>Relatively inexpensive</li>
+                                    <li>Good for force or light buy</li>
+                                    <li>Good close range</li>
+                                </ul>
+                            </li>
+                            <li><h5>Shotguns</h5>
+                                <ul>
+                                    <li>Relatively inexpensive</li>
+                                    <li>Good for anti eco(enemy team is saving)</li>
+                                    <li>High kill bounties</li>
+                                </ul>
+                            </li>
+                            
+                            <li><h5>Assualt Rifles</h5>
+                                <ul>
+                                    <li>Medium Price</li>
+                                    <li>Should be your bread and butter</li>
+                                    <li>Both M4 and AK are all around great weapons</li>
+                                </ul>
+                            </li>
+                            <li><h5>Snipers</h5>
+                                <ul>
+                                    <li>AWP is 1 shot kill above waist</li>
+                                    <li>Really expensive</li>
+                                    <li>Low kill reward</li>
+                                    <li>beware of losing this</li>
+                                </ul>
+                            </li>
+                            <li><h5>Heavy Machine Guns</h5>
+                                <ul>
+                                    <li>Don't buy m249</li>
+                                    <li>Negev is broken(really good ct)</li>
+                                </ul>
+                            </li>
                 </ul>
+                <ul><h4>Utility</h4>
+                    <p><strong>BUY UTILITY WHENEVER POSSIBLE!</strong></p>
+                    <li><h5>Smoke</h5>
+                        <ul>
+                            <li>lasts 15 seconds</li>
+                            <li>Good for getting better angles</li>
+                            <li>Good at preventing a push(person watching smoke has advantage)</li>
+                        </ul>
+                    </li>
+                    <li><h5>Flashbang</h5>
+                        <ul>
+                            <li>Blinds enemies or allies</li>
+                            <li>Good to throw right before poushing angle</li>
+                            <li>Good against AWP</li>
+                        </ul>
+                    </li>
+                    <li><h5>Firebomb</h5>
+                        <ul>
+                            <li>Lasts 7 seconds</li>
+                            <li>Good at flushing a player out of a corner</li>
+                            <li>Good at preventing a push</li>
+                        </ul>
+                    </li>
+                    <li><h5>HE grenade</h5>
+                        <ul>
+                            <li>Good at finishing wounded enemies</li>
+                            <li>Two nades together can finish a player</li>
+                            <li>Nade stacking is decent eco strategy</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul><h4>Firing your weapon</h4>
+                    <li>All weapons are accurate when standing still</li>
+                    <li>All weapons have unique spray patterns that are almost identical</li>
+                    <li>All weapons have random spread</li>
+                    <li>Open an aim trainer from steam workshop to practice aim</li>
+                </ul>
+                <ul><h4>Economy</h4>
+                    <li>Max cash is 16,000</li>
+                    <li>If a teammate can't afford utility, armor, and a weapon but you can; you should buy them</li>
+                    <li>Ask for a buy if you can't afford everything</li>
+                    <li>Save if everyone is broke</li>
+                    <li>Make sure your teams economy is synchronized. Buy when they buy and save when they save</li>
+                    <li>Buy every round squad is bad</li>
+                </ul>
+                <p>This is just the tip of the iceburg, but good information to know before you start playing. And remember to have fun!</p>
             </section>
-            <section id="">
-
+            <section id="competitve_mode">
+                <h2>Competitive Mode</h2>
+                <h3>The ranking system</h3>
+                <figure>
+                    <img src="images/general/csgo-ranks.jpg" alt="all csgo ranks">
+                    <figcaption>All ranks: Silver 1 is lowest and Global Elite is highest</figcaption>
+                </figure>
+                <div id="my_ranks">
+                    <h3>My qualifications</h3>
+                    <div id="highest_rank">
+                        <figure>
+                            <h4>My highest Rank</h4>
+                            <img src="images/personal_screenshots/the_peak_rankl.png" alt="highest ranl">
+                            <img src="images/personal_screenshots/highest_rank_time_stamp.png" alt="time stamp for highest rank">
+                            <figcaption>I was very proud to reach Supreme in 2015</figcaption>
+                        </figure>
+                    </div>
+                    <div id="current_rank">
+                        <figure>
+                            <h4>My current Rank</h4>
+                            <img src="images/personal_screenshots/current_rank.jpg" alt="current rank"> 
+                            <figcaption>I am now hardstuck silver. Washed up trash</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="comp_alternatives">
+                    <h3>Alternatives</h3>
+                    <p>The comp mode that comes with CSGO is actually the casual mode because
+                        they have 64tick servers, terrible anti-cheat, and less serious players.
+                    </p>
+                    <p>To address these concerns, private companies were formed to provide a true
+                        competitive experience.
+                        <ol>
+                            <li><a href = "https://www.faceit.com/en" target = "_blank">Faceit</a>
+                                <ul>
+                                    <li>128tick servers</li>
+                                    <li>better anti-cheat</li>
+                                    <li>Tournaments</li>
+                                    <li>"Toxicity Prevention system"</li>
+                                </ul>
+                            </li>
+                            <li><a href = "https://play.esea.net/" target = "_blank">ESEA</a>
+                                <ul>
+                                    <li>128tick servers</li>
+                                    <li>better anti-cheat</li>
+                                    <li>Cash prizes for high level players</li>
+                                    <li>Organized league structure</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+                <div id="pro_scene">
+                    <h3>Pro Play</h3>
+                    <p><a href="https://pro.eslgaming.com/csgo/proleague/" target = "_blank">ESL-ProLeague</a>: 
+                    All the best international players form teams to compete at live Tournaments
+                    for a cash prize winning. </p>
+                </div>
             </section>
         </main>
         <footer>
@@ -240,6 +493,16 @@
                 <img src="images/cssverfiy.png" alt="W3CSS Verify"></a>
         </nav>
         </footer>
+        <script>
+            function displayCurrentPage(display, hide1, hide2, hide3, hide4)
+            {
+                document.getElementById(display).style.display='block';
+                document.getElementById(hide1).style.display='none';
+                document.getElementById(hide2).style.display='none';
+                document.getElementById(hide3).style.display='none';
+                document.getElementById(hide4).style.display='none';
+            }
+        </script>
     </body>
 
 </html>
