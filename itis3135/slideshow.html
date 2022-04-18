@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang =en>
+    <head>
+        <title>Slide Show</title>
+        <link rel="stylesheet" href="styles/hot-pink-hippos.css">
+        <link rel="stylesheet" href="styles/slideshow.css">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ledger&family=Nixie+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <script> 
+            $(function()
+            {
+                $("#header").load("header.html"); 
+                $("#footer").load("footer.html"); 
+            });
+        </script> 
+    </head>
+    <body>
+        <div id="header"></div>
+        <main>
+            <h2>Slide Show</h2>
+            <h3>These are a small collection of random screenshots I have taken over the years.</h3>
+            <div class="slideshow_container">
+                <div class="slider_out">
+                    <div class = "slider_in">
+                        <figure class="active" id="first">
+                            <img src="images/slideshow/free_fallin.png" alt="Free fallin" >
+                            <figcaption>Majestic fall(pic1)</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/slideshow/haystack_glitch.png" alt="Assassin's creed haystack glitch">
+                            <figcaption>Assassin's creed 1 haystack glitch(pic2)</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/slideshow/help_me.png" alt="help me">
+                            <figcaption>He is scared. Of the world, of himself. Please help.(pic3)</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/slideshow/legs_in_the_bed.png" alt="Legs stuck in bed">
+                            <figcaption>Mafia 2 legs got stuck in the bed(pic4)</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/slideshow/praise_the_sun.png" alt="praise the sun">
+                            <figcaption>Praise the Sun!(pic5)</figcaption>
+                        </figure>
+                        <figure id = "last">
+                            <img src="images/slideshow/toe_strength.png" alt="powerful toes" >
+                            <figcaption>The most powerful feet in the universe(pic6)</figcaption>
+                        </figure> 
+                    </div>
+                    <img src="images/slideshow/arrowLeft.png" class = "previous" alt="previous">
+                    <img src="images/slideshow/arrowRight.png" class = "next" alt="next">  
+                </div>
+            </div>
+        </main>
+        <footer>
+        <div id="footer"></div>
+        <nav>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html" target="_blank">
+                <img src="images/htmlverify.png" alt="HTML Verify"></a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+                <img src="images/cssverfiy.png" alt="W3CSS Verify"></a>
+        </nav>
+        </footer>
+        <script src="scripts/slideshow.js"></script>
+    </body>
+
+</html>
