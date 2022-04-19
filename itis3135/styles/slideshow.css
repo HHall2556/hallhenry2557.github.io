@@ -28,9 +28,13 @@
     z-index: 10;
 }
 
-.previous, .next
+.previous, .next 
 {
     float:left;
+    cursor: pointer;
+}
+.picture_nav
+{
     cursor: pointer;
 }
 .previous
@@ -54,4 +58,9 @@ h3
 {
     text-align: center;
     position: relative; left: 0%;
+}
+#pic_nav
+{
+    padding-top: 250px;
+    float:left;
 }
