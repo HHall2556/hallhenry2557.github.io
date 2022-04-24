@@ -1,0 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+    font-size: 87.5%;
+	margin: 0 auto;
+	width: 1000px;
+}
+p {
+	padding-bottom: .5em;
+}
+h3
+{
+	padding-right: 5%;
+}

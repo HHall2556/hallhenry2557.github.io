@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     let imageUrls = [];
     let imgCache = document.getElementById("image_list");
-    $('a').on("click", function(e) {
+    $('#thumbnail_list a').on("click", function(e) {
         e.preventDefault();
     });
     $(function()
@@ -34,7 +34,6 @@ $(document).ready(function() {
         let img = new Image();
         img.src = url;
         img.id = id;
-        //console.log(img.id);
         img.style = "position: relative;display:none;";
         imgCache.appendChild(img);
  
