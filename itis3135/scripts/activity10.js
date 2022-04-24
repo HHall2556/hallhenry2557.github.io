@@ -51,7 +51,7 @@ $(document).ready(function() {
             let clickedCaptionTitle = document.getElementById("link_1").getAttribute('title');
             let clickedCaption = document.getElementById("caption");
 
-            current_caption.fadeIn(1000);
+            
 
             switch (imageId) 
             {
@@ -75,12 +75,13 @@ $(document).ready(function() {
                     break;
             }
            clickedCaption.innerHTML = clickedCaptionTitle;
+           current_caption.fadeIn(1000);
         });
         currentImage.fadeOut(1000, function()
         {
             let currentImg= $('.current_image');
 
-            currentImage.fadeIn(1000);
+            
 
             switch (imageId) 
             {
@@ -103,7 +104,7 @@ $(document).ready(function() {
                     currentImg.attr("src", imageUrls[5]);
                     break;
             }
-
+            currentImage.fadeIn(1000);
         });
     });
 
