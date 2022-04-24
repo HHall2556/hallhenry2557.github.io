@@ -1,0 +1,86 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
+    <title>Image Swap</title>
+    <link rel="stylesheet" href="styles/hot-pink-hippos.css"> 
+    <link rel="stylesheet" href="styles/activity10.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ledger&family=Nixie+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+	<main>
+		<h2>Image Swap</h2>
+	    <div id="thumbnail_list">
+	        <a href="images/activity10/images/free_fallin.png" title="Free Fallin" id="link_1" class="current_img">
+	        	<img src="images/activity10/thumbnails/free_fallin_tb.png" alt=""></a>
+	        <a href="images/activity10/images/haystack_glitch.png" id="link_2" title="Haystack Glitch">
+	        	<img src="images/activity10/thumbnails/haystack_glitch_tb.png" alt=""></a>
+	        <a href="images/activity10/images/help_me.png" id="link_3" title="Help me">
+	        	<img src="images/activity10/thumbnails/help_me_tb.png"  alt=""></a>
+	        <a href="images/activity10/images/legs_in_the_bed.png" id="link_4" title="Stuck in bed">
+	        	<img src="images/activity10/thumbnails/legs_in_the_bed_tb.png" alt=""></a>
+	        <a href="images/activity10/images/praise_the_sun.png" id="link_5" title="Praise the sun">
+	        	<img src="images/activity10/thumbnails/praise_the_sun_tb.png" alt=""></a>
+	        <a href="images/activity10/images/toe_strength.png" id="link_6" title="Powerful Toes">
+	        	<img src="images/activity10/thumbnails/toe_strength_tb.png" alt=""></a>
+	    </ul>
+        </div>
+        <div id="selected_image_container">
+        <h3 id="caption" class="current_caption">Free Fallin</h3>
+            <div id="image_list">
+                <img src="images/activity10/images/free_fallin.png" alt="" id="0" class="current_image">
+            </div>               
+        </div>
+
+        <h3>Notes</h3>
+        <p>I had many difficulties with this project. My main problem was with the implementation of the callback function. Originally, I had made
+            a new function that can be called from anywhere that tried to switch the caption and img. This was bad. Once I changed it to an internal 
+            function, and split the caption and image properly, I got the desired result. 
+        </p>
+        <h3>Help</h3>
+        <p>I got help from numerous sources, but I will only put the most helpful here.</p>
+        <ul>
+            <li>
+                <a href="https://stackoverflow.com/questions/1977557/jquery-fade-to-new-image">StackOverFlow.com:</a> 
+                This page is a simple example for changing one image to another that made me realize I was massively overcomplicating everything and allowed me to make a workable solution.
+            </li>
+            <li>
+                <a href="https://stackoverflow.com/questions/4387580/prevent-anchor-behaviour">StackOverFlow.com:</a>
+                Shows how to prevent default behaviour of anchor tags. 
+            </li>
+            <li>
+                <a href="https://stackoverflow.com/questions/3646036/preloading-images-with-javascript">StackOverFlow.com:</a>
+                Example about preloading. I changed mine to preload in a dynamic fashion, but in the future I would do it more similar to example.
+            </li>
+        </ul>
+        <h3>Statement of Integrity</h3>
+        <p>This is my own work. I did not copy and paste the code of others.<br>Signed,
+        <em>Henry Hall 4:10pm 4/24/2022</em></p>
+	</main>	
+	
+    <footer>
+        <div id="footer"></div>
+        <nav>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html" target="_blank">
+                <img src="images/htmlverify.png" alt="HTML Verify"></a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+                <img src="images/cssverfiy.png" alt="W3CSS Verify"></a>
+        </nav>
+        </footer>
+        <script src="scripts/activity10.js"></script>	
+</body>
+</html>
