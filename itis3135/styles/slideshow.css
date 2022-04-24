@@ -56,11 +56,15 @@ figure > img {
 }
 h3
 {
-    text-align: center;
+    text-align: left;
     position: relative; left: 0%;
 }
 #pic_nav
 {
     padding-top: 250px;
     float:left;
+}
+#fig_title
+{
+    text-align: center;
 }
