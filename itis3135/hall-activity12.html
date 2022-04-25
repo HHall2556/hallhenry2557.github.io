@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bxSlider Plugin</title>
+    <link href="styles/hall-activity12.css" rel="stylesheet">
+    <link href="styles/hot-pink-hippos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="scripts/hall-activity12.js"></script>
+    <script> 
+        $(function()
+        {
+            $("#header").load("header.html"); 
+            $("#footer").load("footer.html"); 
+        });
+    </script> 
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <h1>UNC Charlotte</h1>
+        <p>Let's explore our campus!</p>
+        <ul id="slider">
+            <li><img src="images/activity12/building_01.jpg" alt="" title="Entrance"></li>
+            <li><img src="images/activity12/building_02.jpg" alt="" title="Office"></li>
+            <li><img src="images/activity12/building_03.jpg" alt="" title="Housing"></li>
+            <li><img src="images/activity12/building_04.jpg" alt="" title="Stadium"></li>
+            <li><img src="images/activity12/building_05.jpg" alt="" title="Student Union"></li>
+        </ul>
+        <p id="id_pager"></p>
+    </main>
+    <footer>
+        <div id="footer"></div>
+        <nav>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html" target="_blank">
+                <img src="images/htmlverify.png" alt="HTML Verify"></a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+                <img src="images/cssverfiy.png" alt="W3CSS Verify"></a>
+        </nav>
+        </footer>
+</body>
+</html>
