@@ -1,0 +1,31 @@
+body {
+	line-height: 25px;
+	width: 1025px;
+	margin: 0px auto 0 auto;
+}
+header {
+	background: #242424 url('../images/activity13/bullet.gif') no-repeat 25px;
+}
+ main h2 {
+	font-size: 20px;
+	font-weight: bold;
+	background: #dfe3e6 url('../images/activity13/bullet.gif') no-repeat 7px center;
+	padding: 10px 0 3px 20px;
+	border: solid #929ca4 1px;
+	color: #cc1c0d;
+	text-align:center;
+}
+main {
+	width: 1000px;
+	float: left;
+	padding-right: 15px;
+	margin: auto;
+}
+h3 {
+	margin: 1em 0 0;
+	position: relative; left: 0%;
+}
+h4
+{
+	margin:1em 0 0;
+}
