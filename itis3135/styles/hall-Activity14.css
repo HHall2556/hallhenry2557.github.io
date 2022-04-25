@@ -1,0 +1,151 @@
+/* the styles for the elements */
+
+#container {
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+    width: 800px;
+    margin: 5% auto;
+    border: 3px solid #800000;
+    background-color: #fffded;
+	padding: 0;
+}
+#container a:focus, #container a:hover, #container article a:hover {
+	font-style: italic;
+}
+/* the styles for the #town_hall_header */
+#container #town_hall_header {
+	border-bottom: 3px solid #800000;
+	padding: 1.5em 0;
+	background-image: -moz-linear-gradient(
+	    30deg, #800000 0%, #fffded 30%, white 50%, #fffded 80%, #800000 100%);
+	background-image: -webkit-linear-gradient(
+	    30deg, #800000 0%, #fffded 30%, white 50%, #fffded 80%, #800000 100%);
+	background-image: -o-linear-gradient(
+	    30deg, #800000 0%, #fffded 30%, white 50%, #fffded 80%, #800000 100%);
+	background-image: linear-gradient(
+	    30deg, #800000 0%, #fffded 30%, white 50%, #fffded 80%, #800000 100%);
+}
+#town_hall_header h1, #town_hall_header a {
+	color: #800000;
+	background-color: transparent;
+}
+#town_hall_header h2 {
+	color: #800000;
+	font-style: italic;
+	background-color: transparent;
+}
+#town_hall_header img {
+	float: left;
+	padding: 0 30px;
+	background-color: transparent;
+}
+.shadow {
+	text-shadow: 2px 2px 2px #800000;
+}
+
+/* the styles for the main content */
+#container main {
+	clear: left;
+	padding: 0 20px 20px;
+	width: 525px;
+	float: right;
+	color:black;
+	background-color: #fffded;
+}
+#container main h1, #container aside h1 {
+	color: #800000;
+	font-size: 150%;
+	padding: .5em 0 .25em;
+	background-color: transparent;
+}
+#container main h2 {
+	text-align: left;
+	color: black;
+	font-size: 120%;
+	padding-bottom: .25em;
+	background-color: transparent;
+}
+#container main h3 {
+	
+	position: relative; left: 0%;
+	color: black;
+	font-size: 100%;
+	padding-bottom: .25em;
+	background-color: transparent;
+}
+#container main p {
+	color:black;
+	padding-bottom: .5em;
+}
+#container main blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+#container main ul {
+	padding: 0 0 1.5em 1.25em;
+}
+#container main li {
+	padding-bottom: .35em;
+}
+
+#container main img {
+	float: right;
+	margin: 1em 0 1em 1em;
+	border: 1px solid black;
+}
+
+#container aside {
+	width: 215px;
+	float: right;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+#container aside h1 {
+	color: #800000;
+	font-size: 150%;
+	padding: .5em 0 .25em;
+}
+#container aside h2 {
+	font-size: 120%;
+	padding-bottom: .25em;
+}
+#container aside img {
+	padding-bottom: 1em;
+}
+/* the styles for the navigation list */
+#container #nav_list ul { 
+	list-style: none;
+	margin-left: 0;
+	margin-bottom: 1.5em;
+	position: relative; right: 15%;
+	 }
+#container #nav_list li { 
+	width: 200px;
+	margin-bottom: .5em;
+	border: 2px double black;
+	border-radius: 10px;
+	box-shadow: 3px 3px 0 0 #800000;
+	background-image: url("../images/activity14/right.jpg");
+	background-repeat: no-repeat;
+	background-position: 95% center;
+	margin-right:5%;
+}
+#container #nav_list li a {
+	display: block;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	padding: .5em 0 .5em 1em;
+}
+
+/* the styles for the footer */
+#container_footer {
+	color:black;
+	border-top: 3px solid #800000;
+	padding: 1em 0;
+	clear: both;
+}
+#container_footer p {
+	text-align: center;
+}
