@@ -1,0 +1,26 @@
+{"blog_entries" : [
+    {
+        "title": "Proposed Features",
+        "topic": "Features",
+        "image": "../project/images/resized_main/family_shopping_stock.jpg",
+        "thumbnailImg": "../project/images/thumbnails/family_shopping_TB.jpg",
+        "description": "Most Important Features",
+        "article": "The most important features include:"
+    },
+    {
+        "title": "Registered a domain name",
+        "topic": "Domain Name",
+        "image": "../project/images/resized_main/two_shopping_stock.jpg",
+        "thumbnailImg": "../project/images/thumbnails/two_shopping_stock_TB.jpg",
+        "description": "OpenShopper.net",
+        "article": "This is where we went:"
+    },
+    {
+        "title": "Created a github",
+        "topic": "GitHub",
+        "image": "../project/images/resized_main/woman_shopping_stock.jpg",
+        "thumbnailImg": "../project/images/thumbnails/woman_shopping_stock_TB.jpg",
+        "description": "github link",
+        "article": "GitHub is cool"
+    }
+]}

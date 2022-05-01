@@ -1,0 +1,11 @@
+.blog_entry
+{
+    display: inline-block;
+    text-align: center;
+    border-style:solid;
+    margin: 50px;
+}
+#blog_entries_thumbnails
+{
+    text-align: center;
+}

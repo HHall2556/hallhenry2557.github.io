@@ -1,0 +1,53 @@
+{"team_positions" : [
+    {
+        "position": "Front End Developer",
+        "languages": 
+        [
+            "Javascript"
+        ],
+        "description":""
+    },
+    {
+        "position": "Back End Developer",
+        "languages": 
+        [
+            "Golang",
+            "DevOps"
+        ],
+        "description":""
+    },
+    {
+        "position": "DevOps",
+        "languages": 
+        [
+            "linode",
+            "CloudFlare"
+        ],
+        "description":""
+    },
+    {
+        "position": "Documentation",
+        "languages": 
+        [
+            "Mark Down"
+        ],
+        "description":""
+    },
+    {
+        "position": "Tester",
+        "languages": [],
+        "description":""
+    },
+    {
+        "position": "Advertiser",
+        "languages": 
+        [
+            "Twitter",
+            "LinkedIn",
+            "Facebook",
+            "Instagram"
+        ],
+        "description":""
+    }
+
+]}

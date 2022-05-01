@@ -1,0 +1,83 @@
+{"feature_set":[
+    {
+        "feature": "Sign On",
+        "feature_bio": "For convenience via mobile I think it would be important to sign on via Google Account and Apple ID. But I'm still wondering if we should support email/self password as well.",
+        "highlighted": "false"
+        
+    },
+    {
+        "feature": "Stores",
+        "feature_bio": "You will be able to put in your favorite stores that you frequently shop in. Items will be marked as to which store they can be purchased at. This will allow for pulling up a shopping list specifically for that store. Also for items that can be purchased at multiple stores this allows for price comparison.",
+        "highlighted": "true"
+    },
+    {
+        "feature": "Store Categories",
+        "feature_bio": "Stores can be labeled as to the type of products they have. For example Albertson's primarily carries groceries, but they also can carry things as diverse as a “snow shovel”. Walmart is a “everything” store.",
+        "highlighted": "false"
+    },
+    {
+        "feature": "Common Items",
+        "feature_bio": "There will be a set of pre-canned items with pre-canned Icons. The most common groceries. For example Milk, Bread, Carrots, Apples, Oatmeal.",
+        "highlighted": "false"
+    },
+    {
+        "feature": "Custom Items",
+        "feature_bio": "There will also be the ability to Enter a custom item. This will be a product name, picture, and price.",
+        "highlighted": "false"
+    },
+    {
+        "feature": "Item Categories",
+        "feature_bio": "Items will have categories to help with historical recall as well as the pre-canned item search.",
+        "highlighted": "false"
+    },
+    {
+        "feature": "Mandatory Items/Importance",
+        "feature_bio": "Sometimes a doctor will prescribe something over the counter like an Iron Supplement that is a mandatory purchase vs a luxury or holiday item like Soda or Chocolates. Sometimes it is really clear just by what the item is, but if one person is doing data entry and the other is buying the product it would be nice to provide a mechanism that says….I REALLY need this.",
+        "highlighted": "true"
+    },
+    {
+        "feature": "Item Rating",
+        "feature_bio": "There are times where you can have a single item like Old Fashion Oatmeal and different brands can have different satisfaction levels. For example Costco carries a non-organic bulk Old Fashioned Quaker Oats that pricewise can be a winner, but texture, cooking time, or health value may not be as good as a Organic Old Fashioned Oats from Whole Foods. To simplify this data entry a simple 1-5 stars could be given as a rating. An Optional comment field could also be here to explain why the time is given a rating (Taste like plastic, this is simply amazing, or portions too small).",
+        "highlighted": "false"
+    },
+    {
+        "feature": "Store tracking",
+        "feature_bio": "There will be a field on the item to say which store you found the item to help with determining best pricing and store specific information.",
+        "highlighted": "false"
+    },
+    {
+        "feature": "Pricing",
+        "feature_bio": "Items will have a price field where you can enter a price/unit. Support units such as quantity, lbs, ounces, grams, kilograms, liters, gallons, etc.",
+        "highlighted": "false"
+    },
+    {
+        "feature": "Item History",
+        "feature_bio": "Once an Item is entered for a store it can be checked off when purchased, but the item isn't completely deleted. It will be kept in history to be added again in the future. The list will be presented to the user based on frequency of purchase.",
+        "highlighted": "false"
+    },
+    {
+        "feature": "Item Alternatives",
+        "feature_bio": "Frequently an item can be out of stock. Sometimes the item is so unique that there is no alternative, but many times there can be. For example the item is Almond butter and if that item is not available an alternative may be Cashew Butter. When entering an item there should be a button to press to say ahead of time what a good alternative could be. Reasons for an alternative  are not just limited to items out of stock as budget could be just as important.",
+        "highlighted": "true"
+    },
+    {
+        "feature": "Barcode/API (needs investigation)",
+        "feature_bio": "It would be really cool if an item could be entered by barcode. I am not sure if there is some database where we could look up an item by its barcode and automatically fill in the information for the user. Maybe a store has an API?",
+        "highlighted": "false"
+    },
+    {
+        "feature": "Lists",
+        "feature_bio": "The most common list types will be Grocery, Club Store (Costco), Drug Store. These could be pre-canned.",
+        "highlighted": "false"
+    },
+    {
+        "feature": "Wish Lists",
+        "feature_bio": "This is not a common list type. It can be used for weddings, birthdays. A person could put items in their wish list. Textual descriptions as well as adding a URL to the item.",
+        "highlighted": "false"
+    },
+    {
+        "feature": "Split the Bill",
+        "feature_bio": "Not all households are the same and there are times where it can be convenient to just split the bill. Or to pay all items based on the item requestor. For example, roommates have a joint grocery list and they just want to split the bill 3 ways. It could just show the amount or it could use Venmo or Google Pay APIs to request the money from the non-shopper.",
+        "highlighted": "true"
+    }
+]}
