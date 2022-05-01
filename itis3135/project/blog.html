@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang =en>
+    <head>
+        <title>Blog</title>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <link href="styles/general_styling.css" rel="stylesheet">
+        <link href="styles/blog.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/animsition.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- The animsition class needs to wrap everything so the plugin will work properly-->
+       <div class="animsition"> 
+            <!--header_footer.js tells header to load file header.html-->
+            <div id="header"></div>
+                <main>
+                    <h1>Blog</h1>
+                    <!--blog_entries_thumbnails is filled in with an ajax call when the document starts. 
+                        blog.js gets data from blog_entries.json-->
+                    <div id="blog_entries_thumbnails" class="container"></div>
+                    <!--blog_entry_full is filled with data from an ajax call depending on which thumbnail was clicked
+                    blog.js gets info from blog_entries.json-->
+                    <div id="blog_entry_full"></div>
+                </main>
+                <footer>
+                    <!--header_footer.js tells footer to load file footer.html-->
+                    <div id="footer"></div>
+                    <nav>
+                        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html" target="_blank">
+                            <img src="images/verify/htmlverify.png" alt="HTML Verify"></a>
+                        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+                            <img src="images/verify/cssverfiy.png" alt="W3CSS Verify"></a>
+                    </nav>
+                </footer>
+                <script src="scripts/header_footer.js"></script>  
+                <script src="scripts/blog.js"></script> 
+                <script src="scripts/animsition.js"></script>
+                <script src="scripts/animsition_plugin.js"></script>
+        </div>
+    </body>
+    
+</html>
