@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang =en>
+    <head>
+        <title>OpenShopper</title>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+            <link href="styles/general_styling.css" rel="stylesheet">
+            <link href="styles/index.css" rel="stylesheet">
+            <link rel="stylesheet" href="styles/animsition.css">
+        </head>
+    <body>
+        <!-- The animsition class needs to wrap everything so the plugin will work properly
+             Currently, it does not work with bxslider or accordion, might change the accordion to css or get a different plugin-->
+       <!-- <div class="animsition"> -->
+            <!--header_footer.js tells header to load file header.html-->
+            <div id="header"></div>
+            <main>
+                <!--This is where the bxSlider(Carousel Plugin) is used. home_slider.js-->
+                <!--These are all stock photos free to use. https://www.pexels.com/license/-->
+                <div id="slider">
+                    <ul id="stock_slider">
+                        <li><img src="images/home/delivery_stock.jpg" alt="Shopping Cart Stock Photo" title="It's not Delivery, It's fresh Produce"></li>
+                        <li><img src="images\home\dude_inspecting_stock.jpg" alt="Guy holding a vegetable stock photo" title="These Veggies Looking Fine"></li>
+                        <li><img src="images\home\grocery_cart_stock.jpg" alt="Grocery cart filled with groceries" title="What else do I need?"></li>
+                        <li><img src="images\home\happy_veg_stock.jpg" alt="Woman showing a vegetable with a smile" title="Looking Fresh"></li>
+                        <li><img src="images\home\market_stock.jpg" alt="Stock photo of a market" title="Now That's a lot of fruit"></li>
+                        <li><img src="images\home\top_shelf_stock.jpg" alt="woman looking at produce stock photo" title="So Fresh"></li>
+                        <li><img src="images\home\pushing_cart_stock.jpg" alt="woman pushing a cart stock photo" title="Filled to the brim"></li>
+                    </ul>
+            </div>
+            <div id="introduction">
+                <div id="pitch">
+                    <h1>Open Shopper</h1>
+                    <p>While everyone wishes their shopping expereinces could be the idealized versions portrayed, for many, 
+                        shopping is a very stressful experience. Creating a shopping list, budget management, while also trying to
+                        manage children can be difficult for even the most experienced. 
+                    </p>
+                    <p>Enter OpenShopper, an app to help you manage your grocery shopping to make each trip as quick and efficient as
+                        possible <strong>While saving you money.</strong>
+                    </p>
+                    <h2>Mission Statement</h2>
+                    <p>Frequently there is one person that makes the trip to the store in a household at a time and tracking the needs of all the members of a household can be tricky. 
+                        Certain items are best purchased at certain stores or only found at one store while others are commodities and knowing the price vs other places you have purchased it can be important. 
+                        Furthermore, frequently the person shopping needs to communicate with the person at home about the product to further refine it. Another issue with a cloud based application is that 
+                        Sometimes connectivity inside the store can be limited, so the ability to cache the list is important. 
+                        </p>
+                    <h2>Highlighted Features!</h2>
+                    <!--This is filled in with an ajax call. index.js using data-->
+                    <div id="highlighted_features"></div>
+                    <p><a href="features.html">All proposed features.</a></p>
+                </div>
+            </div>
+            </main>
+            <footer>
+                <!--header_footer.js tells footer to load file footer.html-->
+                <div id="footer"></div>
+                <nav>
+                    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html" target="_blank">
+                        <img src="images/verify/htmlverify.png" alt="HTML Verify"></a>
+                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+                        <img src="images/verify/cssverfiy.png" alt="W3CSS Verify"></a>
+                </nav>
+            </footer>
+            <script src="scripts/header_footer.js"></script>
+            <script src="scripts/index.js"></script>  
+            
+            <!--<script src="scripts/animsition.js"></script>
+            <script src="scripts/animsition_plugin.js"></script>
+            will uncomment when solution has been found-->
+        </div>
+    </body>
+
+</html>
