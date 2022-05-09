@@ -4,23 +4,23 @@
         "topic": "Features",
         "image": "../project/images/resized_main/family_shopping_stock.jpg",
         "thumbnailImg": "../project/images/thumbnails/family_shopping_TB.jpg",
-        "description": "Most Important Features",
-        "article": "The most important features include:"
+        "description": "Initial Features",
+        "article": "The features page has all of the features we plan on attempting to implement at some point, but we have narrowed down our initial feature set to include these vital ones: An account feature so users can save data; stores and store categories so users can make different lists for different stores; lists so users can make a list. Split the bill x number of ways to easily calculate who owes who what. We plan to implement as many as neccessary but these are those most important and fundamental features"
     },
     {
         "title": "Registered a domain name",
         "topic": "Domain Name",
         "image": "../project/images/resized_main/two_shopping_stock.jpg",
         "thumbnailImg": "../project/images/thumbnails/two_shopping_stock_TB.jpg",
-        "description": "OpenShopper.net",
-        "article": "This is where we went:"
+        "description": "OpenShopper.info",
+        "article": "For the sake of this project, this is currently hosted at https://webpages.charlotte.edu/hhall25/itis3135/project/index.html. Going forward, we are planning to create a backend for the site and doing our own hosting. To accomplish this, We will need our own domain name specific for this site. We chose to do our hosting through google domains with OpenShopper.info"
     },
     {
         "title": "Created a github",
         "topic": "GitHub",
         "image": "../project/images/resized_main/woman_shopping_stock.jpg",
         "thumbnailImg": "../project/images/thumbnails/woman_shopping_stock_TB.jpg",
-        "description": "github link",
-        "article": "GitHub is cool"
+        "description": "GitHub",
+        "article": "This site is on the GitHub associated with my class projects, but We want OpenShopper to be have its own repository so contributors can contribute to this open source project. Contributing to OpenSource project is part of computer science culture and can look very well on a resume. If you are interested in contributing, Head over to our contributors page or our github at . . . "
     }
 ]}

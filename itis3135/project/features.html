@@ -1,44 +1,57 @@
 <!doctype html>
-<html lang =en>
-    <head>
-        <title>Features</title>
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-        <link href="styles/general_styling.css" rel="stylesheet">
-        <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
-        <!--<link rel="stylesheet" href="styles/animsition.css">-->
-    </head>
-    <body>
-        <!-- The animsition class needs to wrap everything so the plugin will work properly
+<html lang=en>
+
+<head>
+    <title>Features</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.13.1.custom/jquery-ui.min.css">
+
+    <!--  <script src="jquery-us-1.12.1.custom/jquery-ui.min.js"></script>
+         <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Koulen&display=swap" rel="stylesheet">
+    <link href="styles/general_styling.css" rel="stylesheet">
+    <link href="styles/features.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="styles/animsition.css">-->
+</head>
+
+<body>
+    <!-- The animsition class needs to wrap everything so the plugin will work properly
              Does not work with accordion. May change or solve soon-->
-      <!--<div class="animsition"> -->
-            <!--header_footer.js tells header to load file header.html-->
-            <div id="header"></div>
-        
-            <main>
-                <h1>Features</h1>
-                <h2>Current Proposed Feature Set</h2>
-                <!--Feature_tabs is filled out with an ajax call. features.js pulls information from features.json-->
-                <div id="feature_tabs">
-                </div>
-            </main>
-            <footer>
-                <!--header_footer.js tells footer to load file footer.html-->
-                <div id="footer"></div>
-                <nav>
-                    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html" target="_blank">
-                        <img src="images/verify/htmlverify.png" alt="HTML Verify"></a>
-                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
-                        <img src="images/verify/cssverfiy.png" alt="W3CSS Verify"></a>
-                </nav>
-            </footer>
-            <script src="scripts/header_footer.js"></script> 
-            <script src="scripts/features.js"></script>
-            
-           <!-- <script src="scripts/animsition.js"></script>
+    <!--<div class="animsition"> -->
+    <!--header_footer.js tells header to load file header.html-->
+    <div id="header"></div>
+    <main>
+        <h1>Features</h1>
+        <h2>Current Proposed Feature Set</h2>
+        <!--Feature_tabs is filled out with an ajax call. features.js pulls information from features.json-->
+        <div id="feature_tabs">
+            <ul>
+            </ul>
+        </div>
+        <p>We hope these strike your fancy</p>
+    </main>
+    <footer>
+        <!--header_footer.js tells footer to load file footer.html-->
+        <div id="footer"></div>
+        <nav>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html"
+                target="_blank">
+                <img src="images/verify/htmlverify.png" alt="HTML Verify"></a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fhhall25%2Fitis3135%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"
+                target="_blank">
+                <img src="images/verify/cssverfiy.png" alt="W3CSS Verify"></a>
+        </nav>
+    </footer>
+    <script src="scripts/header_footer.js"></script>
+    <script src="scripts/features.js"></script>
+
+    <!-- <script src="scripts/animsition.js"></script>
            <script src="scripts/animsition_plugin.js"></script>
             will uncomment or delete when solved or removed -->
-       <!-- </div> -->
-    </body>
+    <!-- </div> -->
+</body>
 
 </html>

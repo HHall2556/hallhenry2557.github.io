@@ -1,5 +1,97 @@
-#position_head, #position_body, #contact_us_form
+#team
+{
+    text-align: center;
+}
+
+.position_entry
 {
     display: inline-block;
     vertical-align: top;
+    border-style: solid;
+    border-radius: 10%;
+    border-width:3px;
+    text-align: left;
+    margin: 1%;
+    color:#C5C6C7;/*#9a1750;#ee4c7c;*/
+    background-color:#1F2833; /*#e3e2df;/*#66FCF1;*/
+    border-color: #f5f5f5;
+    border-style:solid;
+    padding: 1%;
+}
+.position_entry h4
+{
+    color:#66FCF1;/*#5d001e;*/
+}
+.position_entry h5
+{
+   color:#f5f5f5;/* #45A29E;/*#9a1750;*/
+}
+.position_entry:hover
+{
+   box-shadow: 10px 10px 30px #45A29E, -10px -10px 30px #45A29E, 10px -10px 30px #45A29E, -10px 10px 30px #45A29E;
+}
+form
+{
+    background-color: #1F2833;
+    width: 300px;
+    padding: 0 2% 2% 2%;
+    border-radius: 10%;
+    display:inline-block;
+    border-color: #f5f5f5;
+    border-style: solid;
+    vertical-align: middle;
+}
+#contact_us_form input, select
+{
+    width: 300px;
+    height:40px;
+    padding:1%;
+    font-size: 25px;
+    border-radius: 5%;
+    /*background-color: #1F2833;*/
+}
+.contact_label, input[type=submit]
+{
+    display: block;
+    font-size: 25px;
+    padding-top:2%;
+    padding-bottom:1%;
+}
+
+input[type=submit]
+{
+    margin-top: 1%;
+    border-radius: 10%;
+}
+input:hover, select:hover
+{
+    background-color:#45A29E;
+}
+input:focus, select:focus
+{
+    background-color:#66FCF1;
+}
+form h3
+{
+    color:#66FCF1;
+}
+.contact_label
+{
+    color:#f5f5f5;
+}
+::placeholder
+{
+    color:#1F2833;
+    opacity: 50%;
+}
+input
+{
+    color:#0B0C10;
+}
+#form_log
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10%;
+    width: 60%;
 }

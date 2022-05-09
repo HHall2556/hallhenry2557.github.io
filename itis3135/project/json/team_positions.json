@@ -5,7 +5,9 @@
         [
             "Javascript"
         ],
-        "description":""
+        "description":"",
+        "id": "front_end_dev"
+        
     },
     {
         "position": "Back End Developer",
@@ -14,7 +16,8 @@
             "Golang",
             "DevOps"
         ],
-        "description":""
+        "description":"",
+        "id": "back_end_dev"
     },
     {
         "position": "DevOps",
@@ -23,20 +26,27 @@
             "linode",
             "CloudFlare"
         ],
-        "description":""
+        "description":"",
+        "id": "dev_ops"
     },
     {
-        "position": "Documentation",
+        "position": "Documenter",
         "languages": 
         [
             "Mark Down"
         ],
-        "description":""
+        "description":"",
+        "id": "docu"
     },
     {
         "position": "Tester",
-        "languages": [],
-        "description":""
+        "languages": 
+        [
+            "Selenium",
+            "Cypress",
+            "Postman"
+        ],
+        "description":"test"
     },
     {
         "position": "Advertiser",
@@ -47,7 +57,8 @@
             "Facebook",
             "Instagram"
         ],
-        "description":""
+        "description":"",
+        "id": "advert"
     }
 
 ]}

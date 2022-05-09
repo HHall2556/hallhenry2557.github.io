@@ -5,7 +5,8 @@ by changing "highlighted" attribute true/false changes which are displayed.
 */
 $(document).ready(function() {
 
-    $.ajax({
+    $.ajax
+    ({
         type: "get",
         url: "../project/json/features.json",
         dataType: "json",
@@ -25,23 +26,25 @@ $(document).ready(function() {
                 }
             });
 
-            //creates the slider on the homepage
-            $("#stock_slider").bxSlider({
-                auto:true,
-                minSlides: 1,
-                maxSlides: 1,
-                slideHeight: 810,
-                slideWidth: 600,
-                slideMargin: 10,
-                randomStart: true,
-                pause: 5000,
-                captions: true,
-                pager: true,
-                pagerType: 'short'
-            });
+
             return false;
         }
-    })
 
+    })
+    //creates the slider on the homepage
+    $("#stock_slider").bxSlider
+    ({
+        auto:true,
+        minSlides: 1,
+        maxSlides: 1,
+        slideHeight: 810,
+        slideWidth: 600,
+        slideMargin: 10,
+        randomStart: true,
+        pause: 5000,
+        captions: true,
+        pager: true,
+        pagerType: 'short'
+    });
     
 });

@@ -2,10 +2,12 @@
 //https://git.blivesta.com/animsition/
 //in class sepcifies what happens when the page loads in and outClass when you navigate from the page
 
-$(document).ready(function() {
-    $(".animsition").animsition({
-        inClass: 'rotate-in-lg',
-        outClass: 'rotate-out-lg',
+$(document).ready(function() 
+{
+    $(".animsition").animsition
+    ({
+        inClass: 'fade-in-right-sm',
+        outClass: 'fade-out-right-sm',
         inDuration: 1500,
         outDuration: 800,
         linkElement: '.animsition-link',
@@ -24,5 +26,5 @@ $(document).ready(function() {
         overlayClass : 'animsition-overlay-slide',
         overlayParentElement : 'body',
         transition: function(url){ window.location.href = url; }
-    });
+      });
   });
